@@ -2,7 +2,7 @@
 
 A simple cli that finds the latest Norwegian housing prices in a given location.
 
-- The results are taken from the awesome site at finn.no ✨
+- The results are taken from the awesome sites at finn.no ✨
 - Currently the districts of Oslo are supported as locations
 
 ### 🚀 Usage
@@ -21,6 +21,6 @@ $ node --experimental-json-modules cli.js <options>
 
 ```
 $ node cli.js --location Sentrum
-🏡 4 500 000
-🏡 3 290 000
+🏡 kr 3 290 000
+🏡 kr 4 500 000
 ```

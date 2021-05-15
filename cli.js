@@ -10,9 +10,9 @@ const cli = meow(
   	--location, -l  Housing location
 
   📚 Examples
-    $ node cli.js --location Sentrum
-    🏡 4 500 000
-    🏡 3 290 000
+    $ node --experimental-json-modules cli.js --location Sentrum
+    🏡 kr 3 290 000
+	🏡 kr 4 500 000
 `,
   {
     importMeta: import.meta,
