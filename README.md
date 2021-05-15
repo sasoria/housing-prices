@@ -1,6 +1,9 @@
 # Housing-prices
 
-A simple cli that finds the latest Norwegian housing prices in a given location. The results are taken from finn.no. Currently the districts of Oslo is supported as locations.
+A simple cli that finds the latest Norwegian housing prices in a given location.
+
+- The results are taken from the awesome site at finn.no ✨
+- Currently the districts of Oslo is supported as locations 🚧
 
 ### 🚀 Usage
 
