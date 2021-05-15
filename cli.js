@@ -10,9 +10,9 @@ const cli = meow(
   	--location, -l  Housing location
 
   📚 Examples
-    $ node cli.js --location 1.20061.20512
-      🏡 4 500 000
-      🏡 3 290 000
+    $ node cli.js --location sentrum
+    🏡 4 500 000
+    🏡 3 290 000
 `,
   {
     importMeta: import.meta,

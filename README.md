@@ -17,7 +17,7 @@ $ node cli.js <options>
 ### 📚 Examples
 
 ```
-$ node cli.js --location 1.20061.20512
-    🏡 4 500 000
-    🏡 3 290 000
+$ node cli.js --location Sentrum
+🏡 4 500 000
+🏡 3 290 000
 ```
