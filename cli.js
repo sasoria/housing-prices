@@ -4,7 +4,7 @@ import app from "./lib/index.js";
 const cli = meow(
   `
   🚀 Usage
-  	$ node cli.js <options> 
+  	$ node --experimental-json-modules cli.js <options> 
 
   🌎 Options
   	--location, -l  Housing location

@@ -5,7 +5,7 @@ A simple cli that finds the latest Norwegian housing prices in a given location.
 ### 🚀 Usage
 
 ```
-$ node cli.js <options>
+$ node --experimental-json-modules cli.js <options>
 ```
 
 ### 🌎 Options
