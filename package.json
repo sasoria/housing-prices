@@ -1,0 +1,18 @@
+{
+  "name": "housing-prices",
+  "version": "1.0.0",
+  "description": "A simple cli that finds Norwegian housing prices in a given location",
+  "main": "cli.js",
+  "type": "module",
+  "author": "sasoria",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sasoria/housing.git"
+  },
+  "dependencies": {
+    "meow": "10.0.0",
+    "node-fetch": "2.6.1",
+    "node-html-parser": "3.3.0"
+  }
+}
