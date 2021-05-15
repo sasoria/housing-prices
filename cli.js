@@ -3,10 +3,10 @@ import app from './lib/index.js';
 
 const cli = meow(`
   🚀 Usage
-	  $ node cli.js <options> 
+  	$ node cli.js <options> 
 
   🌎 Options
-	  --location, -l  Housing location
+  	--location, -l  Housing location
 
   📚 Examples
     $ node cli.js --location 1.20061.20512
