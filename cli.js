@@ -1,7 +1,8 @@
-import meow from 'meow';
-import app from './lib/index.js';
+import meow from "meow";
+import app from "./lib/index.js";
 
-const cli = meow(`
+const cli = meow(
+  `
   🚀 Usage
   	$ node cli.js <options> 
 
@@ -12,19 +13,20 @@ const cli = meow(`
     $ node cli.js --location 1.20061.20512
       🏡 4 500 000
       🏡 3 290 000
-`, {
-	importMeta: import.meta,
-	flags: {
-		location: {
-			type: 'string',
-			alias: 'l'
-		}
-	}
-});
+`,
+  {
+    importMeta: import.meta,
+    flags: {
+      location: {
+        type: "string",
+        alias: "l",
+      },
+    },
+  }
+);
 
-
-if(!cli.flags.location) {
+if (!cli.flags.location) {
   cli.showHelp();
-};
+}
 
 app(cli.flags);
