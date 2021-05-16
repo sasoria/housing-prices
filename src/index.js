@@ -1,7 +1,7 @@
 import fetch from "node-fetch";
 import parser from "node-html-parser";
-import locations from "./locations.js";
-import { byAscending, toInteger, toReadableFormat } from "./sort.js";
+import locations from "./lib/locations.js";
+import { byAscending, toInteger, toReadableFormat } from "./lib/sort.js";
 
 const toPrices = (node) => {
   return node.childNodes[1].childNodes[0].rawText;
