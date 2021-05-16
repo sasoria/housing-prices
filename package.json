@@ -1,6 +1,6 @@
 {
   "name": "@sasoria/housing-prices",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A simple cli that finds Norwegian housing prices in a given location",
   "main": "./src/cli.js",
   "bin": "./src/bin/start.sh",
