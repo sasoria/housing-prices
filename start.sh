@@ -1,5 +1,6 @@
 #!/usr/bin/env sh
-dir="$(cd $(dirname "$0"); pwd)"
+cd "$(dirname "$0")"
+# dir="$(cd $(dirname "$0"); pwd)"
 
 pwd
 # ls -la
@@ -9,4 +10,4 @@ pwd
 # ls -la ../lib/node_modules
 # ls -la ../lib/node_modules/@sasoria/housing-prices
 
-node --experimental-json-modules "$dir/cli.js" $1 $2
+node --experimental-json-modules ../lib/node_modules/@sasoria/housing-prices/cli.js $1 $2
