@@ -1,2 +1,3 @@
 #!/usr/bin/env sh
-node --experimental-json-modules src/cli.js $1 $2
+cd "$(dirname "$0")"
+node --experimental-json-modules ../cli.js $1 $2
