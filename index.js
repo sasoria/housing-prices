@@ -1,8 +1,7 @@
 import parser from "node-html-parser";
 import fetchPrices from "./lib/api.js";
 import locations from "./lib/locations.js";
-import { byAscending } from "./lib/sort.js";
-import { byPrice, toInteger } from "./lib/price.js";
+import { byPrice, toInteger, byAscendingPrice } from "./lib/price.js";
 import { toReadableFormat, toPrice, toConsole } from "./lib/price.js";
 
 const app = async (flags) => {
@@ -16,7 +15,7 @@ const app = async (flags) => {
     .map(toPrice)
     .map(toInteger);
 
-  prices.sort(byAscending).map(toReadableFormat).map(toConsole);
+  prices.sort(byAscendingPrice).map(toReadableFormat).map(toConsole);
 };
 
 export default app;
