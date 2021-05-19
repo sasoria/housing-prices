@@ -5,8 +5,8 @@ import { byPrice, toInteger, byAscendingPrice } from "./lib/price.js";
 import { toReadableFormat, toPrice, toConsole } from "./lib/price.js";
 
 const app = async (flags) => {
-  const code = locations.get(flags.location.toLowerCase());
-  const url = `https://www.finn.no/realestate/homes/search.html?location=${code}&sort=PUBLISHED_DESC`;
+  const locationCode = locations.get(flags.location.toLowerCase());
+  const url = `https://www.finn.no/realestate/homes/search.html?location=${locationCode}&sort=PUBLISHED_DESC`;
   const root = parser.parse(await fetchPrices(url));
 
   const prices = root
