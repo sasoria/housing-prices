@@ -1,7 +1,7 @@
 import parser from "node-html-parser";
 import fetchPrices from "./lib/api.js";
 import locations from "./lib/locations.js";
-import { byPrice, toInteger, byAscendingPrice } from "./lib/price.js";
+import { byPrice, toIntegers, byAscendingPrice } from "./lib/price.js";
 import { toReadableFormat, toPrices, toConsole } from "./lib/price.js";
 
 const app = async (flags) => {
@@ -13,7 +13,7 @@ const app = async (flags) => {
     .querySelectorAll(".ads__unit__content__list")
     .filter(byPrice)
     .map(toPrices)
-    .map(toInteger);
+    .map(toIntegers);
 
   prices.sort(byAscendingPrice).map(toReadableFormat).map(toConsole);
 };
