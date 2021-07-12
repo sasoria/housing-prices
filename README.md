@@ -20,7 +20,7 @@ $ npx @sasoria/housing-prices <options>
 ### 📚 Examples
 
 ```
-$ npx @sasoria/housing-prices --location Sentrum
+$ npx @sasoria/housing-prices --location sentrum
 🏡 kr 6 156 305
 🏘️ kr 2 950
 

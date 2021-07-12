@@ -10,7 +10,7 @@ const cli = meow(
     --location, -l  Housing location
 
   📚 Examples
-    $ npx @sasoria/housing-prices --location Sentrum
+    $ npx @sasoria/housing-prices --location sentrum
     🏡 kr 6 156 305
     🏘️ kr 2 950
 
