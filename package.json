@@ -12,7 +12,7 @@
     "url": "git://github.com/sasoria/housing.git"
   },
   "dependencies": {
-    "meow": "10.0.1",
+    "meow": "10.1.0",
     "node-fetch": "2.6.1",
     "node-html-parser": "4.1.0"
   }
