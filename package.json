@@ -9,7 +9,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/sasoria/housing.git"
+    "url": "git://github.com/sasoria/housing-prices.git"
   },
   "dependencies": {
     "meow": "10.1.0",
