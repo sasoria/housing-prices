@@ -2,14 +2,12 @@ import parser from "node-html-parser";
 import fetchPrices from "./lib/api.js";
 import locations from "./lib/locations.js";
 import {
-  byPrice,
-  toIntegers,
   byAscendingPrice,
-  splitPrices,
   parse,
-  parseToReadableFormat,
+  parseToIntegers,
+  toConsole,
+  toReadableFormat,
 } from "./lib/price.js";
-import { toReadableFormat, toPrices, toConsole } from "./lib/price.js";
 
 const app = async (flags) => {
   const locationCode = locations.get(flags.location);
@@ -19,7 +17,7 @@ const app = async (flags) => {
   const details = root
     .querySelectorAll(".ads__unit__content")
     .map((content) => {
-      const adress = content.querySelector(
+      const address = content.querySelector(
         ".ads__unit__content__details"
       ).textContent;
       const price = content.querySelector(
@@ -27,27 +25,12 @@ const app = async (flags) => {
       ).textContent;
 
       return {
-        adress: adress,
-        price: parse(price),
+        address: address,
+        price: parseToIntegers(price),
       };
     });
 
-  details.map((detail) => {
-    return {
-      adress: detail.adress,
-      price: parseToReadableFormat(detail.price),
-    };
-  });
-
-  details.map((detail) => {
-    console.log(detail.adress);
-    console.log(parseToReadableFormat(detail.price));
-  });
-
-  // console.log(details);
-
-  // console.log(details.map(splitPrices).map(toIntegers));
-  // prices.sort(byAscendingPrice).map(toReadableFormat).map(toConsole);
+  details.sort(byAscendingPrice).map(toReadableFormat).map(toConsole);
 };
 
 export default app;
