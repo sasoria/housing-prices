@@ -1,13 +1,8 @@
 import parser from "node-html-parser";
 import fetchPrices from "./lib/api.js";
 import locations from "./lib/locations.js";
-import {
-  byAscendingPrice,
-  parse,
-  parseToIntegers,
-  toConsole,
-  toReadableFormat,
-} from "./lib/price.js";
+import { byAscendingPrice, parseToIntegers } from "./lib/price.js";
+import { toConsole, toReadableFormat } from "./lib/price.js";
 
 const app = async (flags) => {
   const locationCode = locations.get(flags.location);
