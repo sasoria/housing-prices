@@ -1,7 +1,7 @@
 import parser from "node-html-parser";
 import fetchPrices from "./lib/api.js";
 import locations from "./lib/locations.js";
-import { CONTENT, DETAILS, PRICE } from "./lib/constants.js";
+import { CONTENT, ADDRESS, PRICE } from "./lib/constants.js";
 import { byAscendingPrice, parseToIntegers } from "./lib/price.js";
 import { toConsole, toReadableFormat } from "./lib/price.js";
 
@@ -11,7 +11,7 @@ const app = async (flags) => {
   const root = parser.parse(await fetchPrices(url));
 
   const details = root.querySelectorAll(CONTENT).map((content) => {
-    const address = content.querySelector(DETAILS).textContent;
+    const address = content.querySelector(ADDRESS).textContent;
     const price = content.querySelector(PRICE).textContent;
 
     return {
